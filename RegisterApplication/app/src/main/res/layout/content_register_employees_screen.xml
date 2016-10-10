@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.register.application.RegisterEmployeesScreenActivity"
+    android:background="#ccebff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llContentEmployee"
+        tools:showIn="@layout/activity_register_employees_screen">
+
+        <!-- Action bar displayed at the top -->
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvNameEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/name_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txNameEmployeeRegister"/>
+        <requestFocus/>
+
+        <!-- Role -->
+        <TextView
+            android:id="@+id/tvRoleEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/role_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txRoleEmployeeRegister" />
+
+        <!-- CPF -->
+        <TextView
+            android:id="@+id/tvCpfEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/cpf_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txCpfEmployeeRegister" />
+
+        <!-- RG -->
+        <TextView
+            android:id="@+id/tvRgEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/rg_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txRgEmployeeRegister" />
+
+        <!-- Gender -->
+        <TextView
+            android:id="@+id/tvGenderEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/gender_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/rgGenderEmployeeRegister"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_employee_male"
+                android:id="@+id/rbGenderEmployeeRegisterM"
+                android:checked="true"
+                android:layout_weight="0.50" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_employee_female"
+                android:id="@+id/rbGenderEmployeeRegisterF"
+                android:checked="false"
+                android:layout_weight="0.50" />
+        </RadioGroup>
+
+        <!-- Birth Date -->
+        <TextView
+            android:id="@+id/tvDateBirthEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/birth_date_employee"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:id="@+id/txBirthDateEmployeeRegister"/>
+
+                <ImageButton
+                    android:id="@+id/ibCalendarBirthDate"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="true"
+                    android:onClick="selectBirthDate"
+                    android:src="@drawable/ic_calendar_32" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/tvPhoneEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/phone_employee"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/txPhoneEmployeeRegister"/>
+
+        <!-- E-Mail -->
+        <TextView
+            android:id="@+id/tvEmailEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/email_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txEmailEmployeeRegister"/>
+
+        <!-- Salary -->
+        <TextView
+            android:id="@+id/tvSalaryEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/salary_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/txSalaryEmployeeRegister" />
+
+        <!-- Admission date -->
+        <TextView
+            android:id="@+id/tvDateAdmissionEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/admission_date_employee"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:id="@+id/txAdmissionDateEmployeeRegister"/>
+
+                <ImageButton
+                    android:id="@+id/ibCalendarAdmissionDate"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="true"
+                    android:onClick="selectAdmissionDate"
+                    android:src="@drawable/ic_calendar_32" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Dismissal date -->
+        <TextView
+            android:id="@+id/tvDateDismissalEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/dismissal_date_employee"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:id="@+id/txDismissalDateEmployeeRegister"/>
+
+                <ImageButton
+                    android:id="@+id/ibCalendarDismissalDate"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="true"
+                    android:onClick="selectDismissalDate"
+                    android:src="@drawable/ic_calendar_32" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatusEmployeeRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/status_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txStatusEmployeeRegister" />
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btRegisterEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/button_employee_register"
+            android:onClick="registerEmployee"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+</ScrollView>

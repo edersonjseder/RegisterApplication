@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccebff">
+
+        <!-- Action bar displayed at the top -->
+        <include
+            layout="@layout/toolbar" />
+
+        <!-- Creditor -->
+        <TextView
+            android:id="@+id/tvCreditorBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/creditor_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txCreditorBillsToPay"/>
+        <requestFocus/>
+
+        <!-- Number of Parcels -->
+        <TextView
+            android:id="@+id/tvNumberParcelsBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/number_parcels_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/txNumberParcelsBillsToPay" />
+
+        <!-- Number of Paid Parcels -->
+        <TextView
+            android:id="@+id/tvNumberPaidParcelsBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/number_paid_parcels_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/txNumberPaidParcelsBillsToPay" />
+
+        <!-- Number of Parcels to Pay -->
+        <TextView
+            android:id="@+id/tvNumberParcelsToPayBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/number_parcels_to_pay_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/txNumberParcelsToPayBillsToPay" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatusBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/status_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txStatusBillsToPay" />
+
+        <!-- Document -->
+        <TextView
+            android:id="@+id/tvDocumentBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/document_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txDocumentBillsToPay" />
+
+        <!-- Amount to Pay -->
+        <TextView
+            android:id="@+id/tvAmountToPayBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/amount_to_pay_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/txAmountToPayBillsToPay" />
+
+        <!-- Parcel Amount -->
+        <TextView
+            android:id="@+id/tvParcelAmountBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/parcel_amount_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/txParcelAmountBillsToPay" />
+
+        <!-- Amount Paid -->
+        <TextView
+            android:id="@+id/tvAmountPaidBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/paid_amount_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/txAmountPaidBillsToPay" />
+
+        <!-- Total to Pay -->
+        <TextView
+            android:id="@+id/tvTotalToPayBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/total_to_pay_bills_to_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/txTotalToPayBillsToPay" />
+
+        <!-- Due Date -->
+        <TextView
+            android:id="@+id/tvDueDateBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/due_date_bills_to_pay"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:id="@+id/txDueDateBillsToPay"/>
+
+                <ImageButton
+                    android:id="@+id/ibCalendarDueDate"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="true"
+                    android:onClick="selectDueDate"
+                    android:src="@drawable/ic_calendar_32" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Due Date -->
+        <TextView
+            android:id="@+id/tvPaymentDateBillsToPay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/payment_date_bills_to_pay"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:id="@+id/txPaymentDateBillsToPay"/>
+
+                <ImageButton
+                    android:id="@+id/ibCalendarPaymentDate"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="true"
+                    android:onClick="selectPaymentDate"
+                    android:src="@drawable/ic_calendar_32" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Buttons -->
+        <RelativeLayout
+            android:id="@+id/relativeLayoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/button_employee_edit"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+            <Button
+                android:id="@+id/btUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/button_employee_update"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/btDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="left"
+                android:visibility="invisible"
+                android:text="@string/button_employee_delete" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+

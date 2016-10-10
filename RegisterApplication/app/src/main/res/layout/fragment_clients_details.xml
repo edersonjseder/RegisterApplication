@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccebff">
+
+    <!-- Action bar displayed at the top -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvIdClient"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvNameClient"
+        android:textSize="19dp"
+        android:text="@string/name_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txNameClient"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/tvCpfClient"
+        android:textSize="19dp"
+        android:text="@string/cpf_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txCpfClient"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/tvGenderClient"
+        android:textSize="19dp"
+        android:text="@string/gender_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rgGenderClient"
+        android:weightSum="1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_client_male"
+            android:id="@+id/rbGenderClientM"
+            android:enabled="false"
+            android:checked="true"
+            android:layout_weight="0.50" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_client_female"
+            android:id="@+id/rbGenderClientF"
+            android:enabled="false"
+            android:checked="false"
+            android:layout_weight="0.50" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvPhoneClient"
+        android:textSize="19dp"
+        android:text="@string/phone_client"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txPhoneClient"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/tvEmailClient"
+        android:textSize="19dp"
+        android:text="@string/email_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txEmailClient"
+        android:enabled="false" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/button_client_edit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/button_client_update"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="left"
+            android:visibility="invisible"
+            android:text="@string/button_client_delete" />
+
+    </RelativeLayout>
+
+</LinearLayout>

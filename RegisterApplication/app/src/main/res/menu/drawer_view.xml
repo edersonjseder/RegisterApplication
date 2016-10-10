@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- The navigation drawer -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_clients_fragment"
+            android:icon="@drawable/ic_client_128"
+            android:title="Clients" />
+
+        <item
+            android:id="@+id/nav_employees_fragment"
+            android:icon="@drawable/ic_employee_128"
+            android:title="Employees" />
+
+        <item
+            android:id="@+id/nav_providers_fragment"
+            android:icon="@drawable/ic_provider_128"
+            android:title="Providers" />
+
+        <item
+            android:id="@+id/nav_products_fragment"
+            android:icon="@drawable/ic_provider_128"
+            android:title="Products" />
+
+        <item
+            android:id="@+id/nav_bills_to_pay_fragment"
+            android:icon="@drawable/ic_provider_128"
+            android:title="Products" />
+    </group>
+
+</menu>

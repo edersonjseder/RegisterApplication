@@ -1,0 +1,16 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActionBarCompat"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:paddingLeft="10dip"
+        android:paddingBottom="3dp"
+        android:scaleType="center"
+        android:src="@drawable/beautyfit_logo"
+        android:layout_weight="0.10" />
+
+</LinearLayout>

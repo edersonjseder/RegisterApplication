@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.register.application.RegisterBillsToReceiveScreenActivity"
+    android:background="#ccebff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llContentBillsToReceive"
+        tools:showIn="@layout/activity_register_bills_to_receive_screen">
+
+        <!-- Action bar displayed at the top -->
+        <include
+            layout="@layout/toolbar" />
+
+        <!-- Creditor -->
+        <TextView
+            android:id="@+id/tvCreditorBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/creditor_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txCreditorBillsToReceiveRegister"/>
+        <requestFocus/>
+
+        <!-- Number of Parcels -->
+        <TextView
+            android:id="@+id/tvNumberParcelsBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/number_parcels_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/txNumberParcelsBillsToReceiveRegister" />
+
+        <!-- Number of Received Parcels -->
+        <TextView
+            android:id="@+id/tvNumberReceivedParcelsBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/number_received_parcels_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/txNumberReceivedParcelsBillsToReceiveRegister" />
+
+        <!-- Number of Parcels to Receive -->
+        <TextView
+            android:id="@+id/tvNumberParcelsToReceiveBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/number_parcels_to_receive_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/txNumberParcelsToReceiveBillsToReceiveRegister" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvStatusBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/status_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txStatusBillsToReceiveRegister" />
+
+        <!-- Document -->
+        <TextView
+            android:id="@+id/tvDocumentBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/document_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txDocumentBillsToReceiveRegister" />
+
+        <!-- Amount to Receive -->
+        <TextView
+            android:id="@+id/tvAmountToReceiveBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/amount_to_receive_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/txAmountToReceiveBillsToReceiveRegister" />
+
+        <!-- Parcel Amount -->
+        <TextView
+            android:id="@+id/tvParcelAmountBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/parcel_amount_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/txParcelAmountBillsToReceiveRegister" />
+
+        <!-- Amount Received -->
+        <TextView
+            android:id="@+id/tvAmountReceivedBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/received_amount_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/txAmountReceivedBillsToReceiveRegister" />
+
+        <!-- Total to Receive -->
+        <TextView
+            android:id="@+id/tvTotalToReceiveBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/total_to_receive_bills_to_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/txTotalToReceiveBillsToReceiveRegister" />
+
+        <!-- Due Date -->
+        <TextView
+            android:id="@+id/tvDueDateBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/due_date_bills_to_receive"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:id="@+id/txDueDateBillsToReceiveRegister"/>
+
+                <ImageButton
+                    android:id="@+id/ibCalendarDueDate"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="true"
+                    android:onClick="selectDueDate"
+                    android:src="@drawable/ic_calendar_32" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Receipt Date -->
+        <TextView
+            android:id="@+id/tvReceiptDateBillsToReceiveRegister"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/receipt_date_bills_to_receive"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:id="@+id/txReceiptDateBillsToReceiveRegister"/>
+
+                <ImageButton
+                    android:id="@+id/ibCalendarReceiptDate"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="true"
+                    android:onClick="selectReceiptDate"
+                    android:src="@drawable/ic_calendar_32" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btRegisterBillsToReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/button_bills_to_receive_register"
+            android:onClick="registerBillsToReceive"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">Register Application</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Dashboard buttons -->
+    <string name="button_clients_dashboard">Clients</string>
+    <string name="button_employees_dashboard">Employees</string>
+    <string name="button_providers_dashboard">Providers</string>
+    <string name="button_products_dashboard">Products</string>
+    <string name="button_schedules_dashboard">Schedules</string>
+    <string name="button_customer_service_dashboard">Customer Service</string>
+
+    <!-- Clients -->
+    <string name="name_client">Name:</string>
+    <string name="cpf_client">CPF:</string>
+    <string name="gender_client">Gender:</string>
+    <string name="gender_client_male">Male</string>
+    <string name="gender_client_female">Female</string>
+    <string name="phone_client">Phone:</string>
+    <string name="email_client">E-mail:</string>
+
+    <string name="button_client_list">Clients</string>
+    <string name="empty_list_client">No Records Found</string>
+
+    <string name="button_client_register">Register</string>
+    <string name="button_client_edit">Edit</string>
+    <string name="button_client_update">Update</string>
+    <string name="button_client_delete">Delete</string>
+
+    <string name="title_activity_main_screen">MainScreenActivity</string>
+    <string name="title_activity_clients_list_screen">ClientsListScreenActivity</string>
+    <string name="title_activity_clients_details">ClientsDetailsActivity</string>
+    <string name="title_activity_register_clients_screen">RegisterClientsScreenActivity</string>
+
+    <!-- Employees -->
+    <string name="name_employee">Name:</string>
+    <string name="cpf_employee">CPF:</string>
+    <string name="rg_employee">RG:</string>
+    <string name="role_employee">Role:</string>
+    <string name="birth_date_employee">Birth Date:</string>
+    <string name="admission_date_employee">Admission Date:</string>
+    <string name="dismissal_date_employee">Dismissal Date:</string>
+    <string name="gender_employee">Gender:</string>
+    <string name="gender_employee_male">Male</string>
+    <string name="gender_employee_female">Female</string>
+    <string name="phone_employee">Phone:</string>
+    <string name="email_employee">E-mail:</string>
+    <string name="salary_employee">Salary:</string>
+    <string name="status_employee">Status:</string>
+
+    <string name="button_employee_list">Employees</string>
+    <string name="empty_list_employee">No Records Found</string>
+
+    <string name="button_employee_register">Register</string>
+    <string name="button_employee_edit">Edit</string>
+    <string name="button_employee_update">Update</string>
+    <string name="button_employee_delete">Delete</string>
+
+    <string name="title_activity_employees_list">EmployeesListActivity</string>
+    <string name="title_activity_employee_details">EmployeeDetailsActivity</string>
+    <string name="title_activity_register_employees_screen">RegisterEmployeesScreenActivity</string>
+
+    <!-- Providers -->
+    <string name="name_provider">Name:</string>
+    <string name="cpf_cnpj_provider">CPF/CNPJ:</string>
+    <string name="ie_rg_provider">IE/RG:</string>
+    <string name="register_date_provider">Register Date:</string>
+    <string name="phone_provider">Phone:</string>
+    <string name="email_provider">E-Mail:</string>
+
+    <string name="button_provider_list">Providers</string>
+    <string name="empty_list_provider">No Records Found</string>
+
+    <string name="button_provider_register">Register</string>
+    <string name="button_provider_edit">Edit</string>
+    <string name="button_provider_update">Update</string>
+    <string name="button_provider_delete">Delete</string>
+
+    <string name="title_activity_providers_list_screen">ProvidersListScreenActivity</string>
+    <string name="title_activity_providers_details">ProvidersDetailsActivity</string>
+    <string name="title_activity_register_providers_screen">RegisterProvidersScreenActivity</string>
+
+    <!-- Products -->
+    <string name="name_product">Name:</string>
+    <string name="description_product">Description:</string>
+    <string name="category_product">Category:</string>
+    <string name="quantity_product">Quantity:</string>
+    <string name="register_date_product">Register Date:</string>
+    <string name="validate_date_product">Validate Date:</string>
+    <string name="price_product">Price:</string>
+
+    <string name="button_product_list">Products</string>
+    <string name="empty_list_product">No Records Found</string>
+
+    <string name="button_product_register">Register</string>
+    <string name="button_product_edit">Edit</string>
+    <string name="button_product_update">Update</string>
+    <string name="button_product_delete">Delete</string>
+
+    <string name="title_activity_products_list_screen">ProductsListScreenActivity</string>
+    <string name="title_activity_products_details">ProductsDetailsActivity</string>
+    <string name="title_activity_register_products_screen">RegisterProductsScreenActivity</string>
+
+    <!-- Bills to Pay -->
+    <string name="creditor_bills_to_pay">Creditor:</string>
+    <string name="number_parcels_bills_to_pay">Number Parcels:</string>
+    <string name="number_paid_parcels_bills_to_pay">Number Paid Parcels:</string>
+    <string name="number_parcels_to_pay_bills_to_pay">Number of Parcels to Pay:</string>
+    <string name="status_bills_to_pay">Status Bills:</string>
+    <string name="document_bills_to_pay">Document Bill:</string>
+    <string name="amount_to_pay_bills_to_pay">Amount to Pay:</string>
+    <string name="parcel_amount_bills_to_pay">Amount Parcel:</string>
+    <string name="paid_amount_bills_to_pay">Amount Paid:</string>
+    <string name="total_to_pay_bills_to_pay">Total to Pay:</string>
+    <string name="due_date_bills_to_pay">Due Date:</string>
+    <string name="payment_date_bills_to_pay">Payment Date:</string>
+
+    <string name="button_bills_to_pay_list">Bills to Pay</string>
+    <string name="empty_list_bills_to_pay">No Records Found</string>
+
+    <string name="button_bills_to_pay_register">Register</string>
+    <string name="button_bills_to_pay_edit">Edit</string>
+    <string name="button_bills_to_pay_update">Update</string>
+    <string name="button_bills_to_pay_delete">Delete</string>
+
+    <string name="title_activity_bills_to_pay_list_screen">BillsToPayListScreenActivity</string>
+    <string name="title_activity_bills_to_pay_details">BillsToPayDetailsActivity</string>
+    <string name="title_activity_register_bills_to_pay_screen">RegisterBillsToPayScreenActivity</string>
+
+    <!-- Bills to Receive -->
+    <string name="creditor_bills_to_receive">Creditor:</string>
+    <string name="number_parcels_bills_to_receive">Number Parcels:</string>
+    <string name="number_received_parcels_bills_to_receive">Number Received Parcels:</string>
+    <string name="number_parcels_to_receive_bills_to_receive">Number of Parcels to Receive:</string>
+    <string name="status_bills_to_receive">Status Bills:</string>
+    <string name="document_bills_to_receive">Document Bill:</string>
+    <string name="amount_to_receive_bills_to_receive">Amount to Receive:</string>
+    <string name="parcel_amount_bills_to_receive">Amount Parcel:</string>
+    <string name="received_amount_bills_to_receive">Amount Received:</string>
+    <string name="total_to_receive_bills_to_receive">Total to Receive:</string>
+    <string name="due_date_bills_to_receive">Due Date:</string>
+    <string name="receipt_date_bills_to_receive">Receipt Date:</string>
+
+    <string name="button_bills_to_receive_list">Bills to Receive</string>
+    <string name="empty_list_bills_to_receive">No Records Found</string>
+
+    <string name="button_bills_to_receive_register">Register</string>
+    <string name="button_bills_to_receive_edit">Edit</string>
+    <string name="button_bills_to_receive_update">Update</string>
+    <string name="button_bills_to_receive_delete">Delete</string>
+
+    <string name="title_activity_bills_to_receive_list_screen">BillsToReceiveListScreenActivity</string>
+    <string name="title_activity_bills_to_receive_details">BillsToReceiveDetailsActivity</string>
+    <string name="title_activity_register_bills_to_receive_screen">RegisterBillsToReceiveScreenActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

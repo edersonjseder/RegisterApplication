@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.register.application.RegisterProvidersScreenActivity"
+    tools:showIn="@layout/activity_register_providers_screen"
+    android:background="#ccebff">
+
+    <!-- Action bar displayed at the top -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/tvNameProviderRegister"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/name_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txNameProviderRegister"/>
+
+    <!-- CPF/CNPJ -->
+    <TextView
+        android:id="@+id/tvCpfCnpjProviderRegister"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/cpf_cnpj_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txCpfCnpjProviderRegister" />
+
+    <!-- IE/RG -->
+    <TextView
+        android:id="@+id/tvIeRgProviderRegister"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/ie_rg_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txIeRgProviderRegister" />
+
+    <!-- Register Date -->
+    <TextView
+        android:id="@+id/tvRegisterDateProviderRegister"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/register_date_provider"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/txRegisterDateProviderRegister"/>
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/tvPhoneProviderRegister"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/phone_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txPhoneProviderRegister" />
+
+    <!-- E-Mail -->
+    <TextView
+        android:id="@+id/tvEmailProviderRegister"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/email_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txEmailProviderRegister" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/btRegisterProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/button_provider_register"
+        android:onClick="registerProvider"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right" />
+
+</LinearLayout>

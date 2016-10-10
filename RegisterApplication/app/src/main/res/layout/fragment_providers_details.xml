@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccebff">
+
+    <!-- Action bar displayed at the top -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvIdProvider"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/tvNameProvider"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/name_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txNameProvider"
+        android:enabled="false" />
+
+    <!-- CPF/CNPJ -->
+    <TextView
+        android:id="@+id/tvCpfCnpjProvider"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/cpf_cnpj_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txCpfCnpjProvider"
+        android:enabled="false" />
+
+    <!-- IE/RG -->
+    <TextView
+        android:id="@+id/tvIeRgProvider"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/ie_rg_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txIeRgProvider"
+        android:enabled="false" />
+
+    <!-- Register Date -->
+    <TextView
+        android:id="@+id/tvRegisterDateProvider"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/register_date_provider"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:enabled="false"
+                android:ems="10"
+                android:id="@+id/txRegisterDateProvider"/>
+
+            <ImageButton
+                android:id="@+id/ibCalendarRegisterDateDetails"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:cropToPadding="true"
+                android:src="@drawable/ic_calendar_32" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/tvPhoneProvider"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/phone_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txPhoneProvider"
+        android:enabled="false" />
+
+    <!-- E-Mail -->
+    <TextView
+        android:id="@+id/tvEmailProvider"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/email_provider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txEmailProvider"
+        android:enabled="false" />
+
+    <!-- Buttons -->
+    <RelativeLayout
+        android:id="@+id/relativeLayoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/button_provider_edit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/button_provider_update"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="left"
+            android:visibility="invisible"
+            android:text="@string/button_provider_delete" />
+
+    </RelativeLayout>
+
+</LinearLayout>

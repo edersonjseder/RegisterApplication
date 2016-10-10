@@ -1,0 +1,50 @@
+<com.register.application.dashboard.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+
+    <!--  Clients Button -->
+    <Button
+        android:id="@+id/btn_clients_dash"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_client_128"
+        android:text="@string/button_clients_dashboard" />
+
+    <!--  Employees Button -->
+    <Button
+        android:id="@+id/btn_employees_dash"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_employee_128"
+        android:text="@string/button_employees_dashboard" />
+
+    <!--  Providers Button -->
+    <Button
+        android:id="@+id/btn_providers_dash"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_provider_128"
+        android:text="@string/button_providers_dashboard" />
+
+    <!--  Products Button -->
+    <Button
+        android:id="@+id/btn_products_dash"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_group_128"
+        android:text="@string/button_products_dashboard" />
+
+    <!--  Schedules Button -->
+    <Button
+        android:id="@+id/btn_schedules_dash"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_group_128"
+        android:text="@string/button_schedules_dashboard" />
+
+    <!--  Customer Service Button -->
+    <Button
+        android:id="@+id/btn_customer_service_dash"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/ic_group_128"
+        android:text="@string/button_customer_service_dashboard" />
+
+</com.register.application.dashboard.DashboardLayout>
